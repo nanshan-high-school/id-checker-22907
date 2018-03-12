@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char k[10];
+    int i, j, sum;
+    cout << "請輸入身份證字號:";
+	cin >> k;
+	i = (int(k[0])- 55) / 10;
+	j = i * 1;
+	sum = sum + j;
+	cout << i << " " << j <<"\n";
+	
+	i = (int(k[0])- 55) % 10;
+	j = i * 9;
+	sum = sum + j;
+	cout << i << " " << j <<"\n";
+	
+	i = int(k[1])- 48;
+	j = i * 8;
+	sum = sum + j;
+	cout << i << " " << j <<"\n";
+
+}
